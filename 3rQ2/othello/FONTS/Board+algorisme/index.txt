@@ -1,0 +1,9 @@
+algorisme_DriverClass --> classe per testejar la classe algorisme. Conte tres tests variables.
+
+algorisme.java --> codi de la classe algorisme.
+
+Board.java--> Codi de la classe Board
+
+Gamemode.java --> stub de la classe Gamemode
+
+DriverBoard.java--> codi del driver de la classe Board.

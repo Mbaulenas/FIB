@@ -1,0 +1,9 @@
+Descripció: Jugar una partida sense captures en diagonal.
+
+Objectius: Provar que tant la col·locació de fitxes com les captures es fan respecte el mode de joc.
+
+Entrada: Intentem col·locar una fitxa per capturar en diagonal. Després col·loquem correctament les fitxes per veure si es capturen correctament.
+
+Sortida: No es realitzen captures en diagonal ni podem col·locar una peça per fer una captura en diagonal.
+
+Resultat de la prova: OK.

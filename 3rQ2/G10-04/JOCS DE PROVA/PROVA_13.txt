@@ -1,0 +1,6 @@
+PROVA 13:
+Descripció: Comprovació del “add” d’una partida al rànquing.
+Objectius: Mirar si l’“add” de la partida s’executa correctament.
+Entrada: Observem el rànquing actual, juguem un nou Kakuro, l’acabem i finalitzem la partida. Anem a l’apartat de rànquing i l’observem altre cop.
+Sortida: Observem que la partida s’ha afegit correctament.
+Resultat de la prova: OK.

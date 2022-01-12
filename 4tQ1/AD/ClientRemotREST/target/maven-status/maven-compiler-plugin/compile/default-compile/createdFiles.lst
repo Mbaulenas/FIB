@@ -1,0 +1,9 @@
+list.class
+loginServlet.class
+Image.class
+com/mycompany/clientremotrest/JAXRSConfiguration.class
+buscarImagen.class
+modificarImagen.class
+registrarImagen.class
+com/mycompany/clientremotrest/resources/JavaEE8Resource.class
+ClientServlet/eliminarImagen.class

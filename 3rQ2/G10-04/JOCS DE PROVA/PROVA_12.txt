@@ -1,0 +1,6 @@
+PROVA 12:
+Descripció: Comprovació del “mostra rànquing per temps”.
+Objectius: Mirar si el Ranking per temps es mostra correctament en cadascuna de les dificultats.
+Entrada: Acabem al menys 2 partides de cada dificultat per si el rànquing estigués buit. Tot seguit anem a l’apartat de rànquing i demanem que ens mostri el rànquing per temps de cada dificultat.
+Sortida: Observem que ens mostra el rànquing per temps de cada dificultat correctament.
+Resultat de la prova: OK.

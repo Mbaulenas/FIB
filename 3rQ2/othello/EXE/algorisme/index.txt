@@ -1,0 +1,5 @@
+Test_algorisme.jar --> Executable de la classe algorisme_DriverClass. Testeja la classe algorisme amb tres tests variables.
+
+Els jocs de prova resolts es troben a DOCS/algorisme.odt
+
+

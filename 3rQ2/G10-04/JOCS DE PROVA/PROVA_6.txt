@@ -1,0 +1,10 @@
+Descripció: Eliminar tots els kakuros disponibles del repositori.
+
+Objectius: Mirar si els kakuros estan guardats de forma correcta al repositori i si els podem eliminar en complet.
+
+Entrada: Seleccionar la opció de eliminar tots els kakuros.
+
+Sortida: Ens surt un missatge d’avís informant-nos de la situació i un cop acceptat podem recarregar els kakuros disponibles que tenim a la app. 
+	 Podem apreciar que el repositori ja és buit.
+ 
+Resultat de la prova: OK.

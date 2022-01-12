@@ -1,0 +1,10 @@
+Descripció: Guardar una partida.
+
+Objectius: Mirar si les partides es creen i es guarden de forma correcte amb el seu corresponent identificador.
+
+Entrada: Generar un kakuro qualsevol i guardar la partida a mitges.
+
+Sortida: Al guardar la partida a mitges ens diu que tenim l’identificador de la nostra partida a 0. 
+	 Anem a partides existents i podem comprovar que la tenim i que és la partida correcta.
+
+Resultat de la prova: OK.

@@ -1,0 +1,17 @@
+algorisme.java--> Codi de la classe algorisme
+
+board.java -->stub de la classe Board
+
+Driverclassjugador.java--> codi deldriver de la classe jugador
+
+Driverclassmodejoc.java--> codi del driver de la classe Gamemode
+
+Driverclassjugador.java--> codi del driver de la classe partida
+
+jugador.java--> codi de la classe jugador
+
+mode_joc.java--> codi de la classe Gamemode
+
+partida.java --> codi de la classe partida
+
+ranking.java--> codi de la classe ranking

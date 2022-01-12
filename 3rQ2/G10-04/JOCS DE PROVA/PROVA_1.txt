@@ -1,0 +1,9 @@
+Descripció: Generació de kakuro 4*4 (el més petit possible).
+
+Objectius: Buscar si l’algorisme de generació conté problemes en la creació de kakuros petits.
+
+Entrada: 4 files i 4 columnes dificultat fàcil.
+
+Sortida: L’algorisme genera el kakuro de forma correcte i no es queda el programa encallat.
+
+Resultat de la prova: OK.

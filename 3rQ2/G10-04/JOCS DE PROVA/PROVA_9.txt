@@ -1,0 +1,12 @@
+Descripció: Comprovació del registre d'usuaris.
+
+Objectius: Mirar si el registre d'usuaris es manté correcte.
+
+Entrada: Anem a la part del registre i introduïm un nou nom d’usuari (vàlid) amb la seva contrasenya. 
+	 Posteriorment intentem “loggin” amb un nom d’usuari diferent i una contrasenya diferent a la proposada. 
+	 Seguidament proposem l’usuari que hem indicat anteriorment amb una contrasenya incorrecta i 
+	 finalment proposem tot en com ho haviem posat al registre anterior.
+
+Sortida: Salta un avís d’error indicant que l’usuari o la contrasenya són incorrectes en els primers dos casos i en el tercer entra al programa.
+
+Resultat de la prova: OK.

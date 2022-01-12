@@ -1,0 +1,9 @@
+Descripció: Comprovació del “loggin” d’usuaris.
+
+Objectius: Mirar si el “loggin” d'usuaris es manté correcte.
+
+Entrada: Anem a la part del registre i introduïm un nou nom d’usuari no vàlid (ja registrat anteriorment) i una proposta de contrasenya.
+
+Sortida: Salta un avís d’error indicant que el nom d’usuari ja havia estat registrat anteriorment.
+
+Resultat de la prova: OK.

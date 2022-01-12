@@ -1,0 +1,9 @@
+Descripció: Generació de kakuro 9*9 (el més gran possible).
+
+Objectius: Buscar si l’algorisme de generació conté problemes en la creació de kakuros grans.
+
+Entrada: 9 files i 9 columnes dificultat dificil.
+
+Sortida: L’algorisme genera el kakuro de forma correcte i no es queda el programa encallat.
+
+Resultat de la prova: OK.

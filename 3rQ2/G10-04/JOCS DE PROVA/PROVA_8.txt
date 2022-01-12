@@ -1,0 +1,19 @@
+Descripció: Proposta Kakuro no valid.
+
+Objectius: Mirar si el algorisme de validació de propostes de kakuros funciona de forma correcta.
+
+Entrada: Un arxiu de text amb un kakuro no vàlid en format estàndard.
+
+Sortida: Salta un avís d’error conforme ens indica que aquest kakuro no és correcte.
+
+Resultat de la prova: OK.
+
+Proposta kakuro:
+
+5,5
+*,C10,C10,*,*
+F3,?,?,*,*
+F17,?,?,C10,C10
+*,*,F17,?,?
+*,*,F3,?,?
+mitjana

@@ -1,0 +1,54 @@
+26/2
+
+OTHELLO
+
+Actor: jugador, maquina(?)
+
+
+Casos d us:
+
+començar partida nova
+Actor: jugador
+Resum: Escollir pvp, pvcpu,cpuvcpu. Escollir normes de la partida!, escollir dificultat i disposicio inicial del tauler,
+escollir temps de partida. En cas de pvp, el jugador 2 fa login.
+
+L usuari escull els parametres de la partida (dificultat, tipus de partida: pvp/pvcpu/cpuvcpu, disposicio inicial del tauler: default(creu, simetric)/personalitzada, normes de captura).
+
+Personalizar l'experiencia [opcional]
+Resum: Canviar opcions de audio, vidio.
+
+Seguir partida guardada
+Actor: jugador
+Resum: L'usuari escull entre una llista de partides guardades previament amb el seu username. En cas de no tenir una partida guardada amb el teu user, la llista de partides guardades estara buida.
+
+
+guardar partida 
+Actor: jugador
+Resum: Mentre s'esta jugant una partida, l'usuari pot guardar l'estat actual d'aquesta. L'usuari selecciona un de 10 possibles slot, en cas de que estigui ple es sobreescriu. 
+Pre: has d estar jugant una partida.
+
+Cancelar partida X
+Actor: jugador
+Resum: Durant una partida l'usuari pot tornar al menu desde una partida sense acabar-la ni guardar l'estat d'aquesta. 
+
+Colocar fitxa
+Actor: jugador/cpu
+Resum: durant el seu torn l'usuari selecciona una casella. Si es válida, colocará la fitxa. Si no, haurà de seleccionar una altra casella. 
+
+Llegir tauler [opc]
+Resum: Es llegeix el tauler en format taula, es pot escollir si llegir les posicions de les peces blanques o negres.
+
+
+Feina per la setmana que ve: Primera versio del diagrama de classes (del model de dades?).
+quines classes i quins atributs, especificant ambdós.
+Mirar cada cas d us, la definicio i des d aqui buscar les classes.
+
+
+
+
+revisar ranking pq cada usuari ha de tenir highscore, diferents rankings per diferents normes.
+revisar gestio d usuaris
+sortir del joc
+gestio disposicio predefinida
+
+

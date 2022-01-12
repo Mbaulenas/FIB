@@ -1,0 +1,10 @@
+Descripció: Seleccionar un kakuro del repositori i eliminar-lo.
+
+Objectius: Mirar si els kakuros estan guardats de forma correcta al repositori i si els podem eliminar.
+
+Entrada: Seleccionar un kakuro del repositori i seleccionar la opció de eliminar.
+
+Sortida: Ens surt un missatge d’avís informant-nos de la situació i un cop acceptat podem recarregar els kakuros
+	 disponibles que tenim a la app. Podem apreciar que el kakuro anterior ja no forma part del repositori.
+
+Resultat de la prova: OK.

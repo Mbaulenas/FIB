@@ -1,0 +1,9 @@
+Descripció: Crear un tauler, guardar-lo i començar una partida nova amb ell.
+
+Objectius: Provar la creació i el començament de la partida amb un tauler personalitzat.
+
+Entrada: Entrem a creació de tauler, i creem un tauler personalitzat de forma que formi una creu, amb dos linies de fitxes per aresta, una de cada color.
+
+Sortida: Un cop iniciem la partida, aquesta es comença correctament amb el nou tauler. Cal esmentar que qualsevol tauler que no respecti les normes del Othello no tindrà un funcionament correcte.
+
+Resultat de la prova: OK.

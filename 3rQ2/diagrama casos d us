@@ -1,0 +1,51 @@
+començar partida -- nova o guardada
+
+huma huma, huma maquina, maquina maquina
+
+gestio de usuaris
+
+gestio de partida
+
+
+
+26/2
+
+OTHELLO
+
+Actor: jugador, maquina(?)
+
+
+Casos d us:
+
+començar partida nova
+Actor: jugador
+Resum: Escollir pvp, pvcpu,cpuvcpu. Escollir normes de la partida. 
+
+partida personalitzada?
+Actor: jugador
+Resum: Comença una partida nova amb un taulell predefinit. Escollir pvp, pvcpu,cpuvcpu.
+
+seguir partida guardada
+Actor: jugador
+Resum: continuar una partida salvada prèviament.
+Pre: tenir una partida salvada.
+
+guardar partida
+Actor: jugador
+Resum: Guarda una partida a mitges per continuarla.
+Pre: has d estar jugant una partida.
+
+tornar al menu
+Actor: jugador
+Resum: Tornar al menu desde una partida
+Pre: has d estar en una partida
+
+colocar fitxa
+Actor: jugador/cpu
+Resum:coloca una fitxa seguint les normes del joc i captura fitxes si toca.
+Pre:has d'estar jugant una partida.
+
+checar ranking
+
+
+Feina per la setmana que ve: fer diagrama de casos d'us, aprendre a jugar al othello.

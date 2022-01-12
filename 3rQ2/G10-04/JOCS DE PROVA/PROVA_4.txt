@@ -1,0 +1,9 @@
+Descripció: Seleccionar un kakuro del repositori i jugar-lo.
+
+Objectius: Mirar si els kakuros estan guardats de forma correcta al repositori i començar una partida.
+
+Entrada: Seleccionar un kakuro del repositori i seleccionar la opció de jugar.
+
+Sortida: La partida és creada de forma correcte.
+
+Resultat de la prova: OK.

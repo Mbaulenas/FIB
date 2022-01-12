@@ -1,0 +1,9 @@
+Descripció: Esborrar un tauler personalitzat.
+
+Objectius: Provar que s'esborra correctament un tauler.
+
+Entrada: Entrem a esborra un tauler i seleccionem el tauler a esborrar. És l'únic tauler creat. Cliquem al botó "esborra".
+
+Sortida: El tauler s'esborra i apareix la combo box de selecció del tauler buida.
+
+Resultat de la prova: OK.

@@ -1,0 +1,3 @@
+/javadoc --> directori que conte tots els arxius de javadoc
+
+Documentacio_diagrames.odt

@@ -1,0 +1,6 @@
+PROVA 14:
+Descripció: Comprovació del “Reiniciar” del rànquing.
+Objectius: Mirar si el “Rreiniciar” del rànquing s’executa correctament.
+Entrada: Observem el rànquing actual i si està buit, juguem un nou Kakuro, l’acabem i finalitzem la partida. Tornem a observar el rànquing i veiem que hi ha dades guardades. Cliquem a reiniciar i tornem a mirar el rànquing.
+Sortida: Observem que el rànquing està buit.
+Resultat de la prova: OK.

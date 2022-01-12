@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Practica0503/Practica03WS?wsdl" uri="wsdl/localhost_8080/Practica0503/Practica03WS.wsdl"/>
+    <system systemId="http://localhost:8080/Practica0503/Practica03WS?xsd=1" uri="wsdl/localhost_8080/Practica0503/Practica03WS.xsd_1.xsd"/>
+    <system systemId="http://10.10.73.48:8080/Practica0503/Practica03WS?WSDL" uri="wsdl/10.10.73.48_8080/Practica0503/Practica03WS.wsdl"/>
+    <system systemId="http://10.10.73.48:8080/Practica0503/Practica03WS?xsd=1" uri="wsdl/10.10.73.48_8080/Practica0503/Practica03WS.xsd_1.xsd"/>
+</catalog>

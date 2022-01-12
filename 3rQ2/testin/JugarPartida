@@ -1,0 +1,9 @@
+Descripció: Jugar una partida sencera i comprovar la correctesa.
+
+Objectius: Provar col·locar una fitxa a una posició incorrecta, la correctesa de les captures i el final de la partida.
+
+Entrada: Al començar la partida cliquem a una casella on no podem capturar. Després col·loquem fitxes fins acabar la partida.
+
+Sortida: Al clicar en una casella incorrecte no hi ha cap canvi. Si no tenim captures disponibles es salta el nostre torn. Si ningú te captures disponibles es detecta correctament el final de la partida.
+
+Resultat de la prova: OK.

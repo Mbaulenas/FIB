@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://practica03.mycompany.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://practica03.mycompany.com/">
+
+<xs:element name="CheckUser" type="tns:CheckUser"/>
+
+<xs:element name="CheckUserResponse" type="tns:CheckUserResponse"/>
+
+<xs:element name="DeleteImage" type="tns:DeleteImage"/>
+
+<xs:element name="DeleteImageResponse" type="tns:DeleteImageResponse"/>
+
+<xs:element name="DownloadImage" type="tns:DownloadImage"/>
+
+<xs:element name="DownloadImageResponse" type="tns:DownloadImageResponse"/>
+
+<xs:element name="ListImage" type="tns:ListImage"/>
+
+<xs:element name="ListImageResponse" type="tns:ListImageResponse"/>
+
+<xs:element name="ModifyImage" type="tns:ModifyImage"/>
+
+<xs:element name="ModifyImageResponse" type="tns:ModifyImageResponse"/>
+
+<xs:element name="RegisterImage" type="tns:RegisterImage"/>
+
+<xs:element name="RegisterImageResponse" type="tns:RegisterImageResponse"/>
+
+<xs:element name="SearchbyAuthor" type="tns:SearchbyAuthor"/>
+
+<xs:element name="SearchbyAuthorResponse" type="tns:SearchbyAuthorResponse"/>
+
+<xs:element name="SearchbyCreaDate" type="tns:SearchbyCreaDate"/>
+
+<xs:element name="SearchbyCreaDateResponse" type="tns:SearchbyCreaDateResponse"/>
+
+<xs:element name="SearchbyId" type="tns:SearchbyId"/>
+
+<xs:element name="SearchbyIdResponse" type="tns:SearchbyIdResponse"/>
+
+<xs:element name="SearchbyKeywords" type="tns:SearchbyKeywords"/>
+
+<xs:element name="SearchbyKeywordsResponse" type="tns:SearchbyKeywordsResponse"/>
+
+<xs:element name="SearchbyTitle" type="tns:SearchbyTitle"/>
+
+<xs:element name="SearchbyTitleResponse" type="tns:SearchbyTitleResponse"/>
+
+<xs:element name="UploadImage" type="tns:UploadImage"/>
+
+<xs:element name="UploadImageResponse" type="tns:UploadImageResponse"/>
+
+<xs:complexType name="SearchbyCreaDate">
+<xs:sequence>
+<xs:element name="creaDate" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchbyCreaDateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DownloadImage">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DownloadImageResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListImage">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListImageResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:image" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="image">
+<xs:sequence>
+<xs:element name="author" type="xs:string" minOccurs="0"/>
+<xs:element name="capture_date" type="xs:string" minOccurs="0"/>
+<xs:element name="creator" type="xs:string" minOccurs="0"/>
+<xs:element name="description" type="xs:string" minOccurs="0"/>
+<xs:element name="filename" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="keywords" type="xs:string" minOccurs="0"/>
+<xs:element name="storage_date" type="xs:string" minOccurs="0"/>
+<xs:element name="title" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RegisterImage">
+<xs:sequence>
+<xs:element name="image" type="tns:image" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RegisterImageResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchbyTitle">
+<xs:sequence>
+<xs:element name="title" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchbyTitleResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:image" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchbyId">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchbyIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:image" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchbyAuthor">
+<xs:sequence>
+<xs:element name="author" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchbyAuthorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CheckUser">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CheckUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModifyImage">
+<xs:sequence>
+<xs:element name="image" type="tns:image" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModifyImageResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UploadImage">
+<xs:sequence>
+<xs:element name="encodedImage" type="xs:string" minOccurs="0"/>
+<xs:element name="filename" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UploadImageResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchbyKeywords">
+<xs:sequence>
+<xs:element name="keywords" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchbyKeywordsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DeleteImage">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DeleteImageResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

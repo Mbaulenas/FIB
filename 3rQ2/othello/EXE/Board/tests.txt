@@ -1,0 +1,97 @@
+This document contains a brief description of each test, as well as their inputs and outputs. The inputs are shown in the format of the personalized mode of the driver.
+
+-- Test 1: Constructors and other lateral functions
+This test can not be replicated in the personalized mode. It creates a default board, loads another board from a file and compares them. Then, it copies the loaded board and compares the original with the copy. Finally, a string is created from the copy using the function toString. Multiple messages are thrown during the test to identify which part it's being executed.
+Thanks to this test we can ensure the correctness of the constructor functions, as well as the equals, toString and print  functions.
+
+-- Test2: limits
+This test perform some moves on the board, trying to reach the limits of it.
+Through this test we can prove the preciseness of many functions as can_capture, capture, is_valid, set, pieces, available_positions and can_play
+- Input:
+set 2 3 B
+set 2 4 W
+set 1 5 B
+adj
+white
+black
+set 1 4 W
+set 0 6 B
+set 0 6 W
+set 0 5 B
+set 0 7 B
+set 4 2 W
+set 5 1 B
+set 4 1 W
+set 6 1 W
+set 6 0 B
+set 6 2 B
+set 5 3 B
+set 5 2 W
+set 7 0 W
+play W
+
+output:
+2 new black pieces
+2 new white pieces
+2 new black pieces
+(5,3) (5,4) (3,2) (4,2) (3,5) (4,5) (2,2) (2,5) (5,2) (5,5) (1,3) (1,2) (1,4) (0,5) (1,6) (0,4) (0,6) (2,6) 
+2 white pieces
+5 black pieces
+2 new white pieces
+0 new black pieces
+2 new white pieces
+2 new black pieces
+4 new black pieces
+2 new white pieces
+2 new black pieces
+2 new white pieces
+2 new white pieces
+3 new black pieces
+2 new black pieces
+2 new black pieces
+3 new white pieces
+3 new white pieces
+yes
+EEEEEBBB                                                                                                                                                                                                           
+EEEEBBEE                                                                                                                                                                                                           
+EEEBBEEE                                                                                                                                                                                                           
+EEEBWEEE                                                                                                                                                                                                           
+EWWWWEEE                                                                                                                                                                                                           
+EWWBEEEE                                                                                                                                                                                                           
+BWBEEEEE                                                                                                                                                                                                           
+WEEEEEEE                                                                                                                                                                                                           
+
+-- Test 3:
+This test performs some moves on the board changing the game mode in between.
+The test aims to demonstrate the correctness of the function change_gm in combination with the other functions of the class.
+
+- input:
+set 3 2 W
+gm tff
+adj
+gm fft
+adj
+print
+set 5 4 B
+gm tft
+set 5 4 B
+
+- output:
+2 new white pieces
+(2,2) (2,3) (2,4) (4,2) (5,3) (5,4)                                                                                                                                                                                
+(2,1) (2,2) (2,3) (2,4) (2,5) (3,5) (4,1) (4,2) (4,5) (5,2) (5,3) (5,4) (5,5)                                                                                                                                      
+EEEEEEEE                                                                                                                                                                                                           
+EEEEEEEE                                                                                                                                                                                                           
+EEEEEEEE                                                                                                                                                                                                           
+EEBBBEEE                                                                                                                                                                                                           
+EEEBWEEE                                                                                                                
+EEEEEEEE                                                                                                                                                                                                           
+EEEEEEEE                                                                                                                                                                                                           
+EEEEEEEE                                                                                                                                                                                                           
+0 new black pieces
+2 new black pieces
+
+-- Test 4: errors
+This test will execute some operations with invalid arguments.
+Thanks to this test we can check how some functions react before invalid inputs.
+This test can not be replicated through the personalized mode.

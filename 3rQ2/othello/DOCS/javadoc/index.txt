@@ -1,0 +1,3 @@
+package-summary.html --> Pàgina principal per consultar la descripció de les classes i els mètodes.
+
+Els altres arxius són auxiliars/navegables des de index.

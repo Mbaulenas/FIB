@@ -1,0 +1,12 @@
+Descripció: Comprovació de la correctesa de la diversitat d’usuaris a les partides disponibles.
+
+Objectius: Comprovar si realment cada usuari té les seves pròpies partides disponibles i altres usuaris no hi poden accedir a elles.
+
+Entrada: Ens registrem amb un usuari qualsevol, posteriorment podem crear una partida de qualsevol forma de les 3 vàlides 
+	 (Generant un kakuro, proposant un kakuro o sel·leccionant un kakuro del repositori) i finalment deixem la partida a mitges. 
+	 Un cop tenim tot això fet comprovem que tenim una partida disponible amb el identificador que se li ha assignat anteriorment. 
+ 	 Seguidament, ens registrem amb un altra usuari i anem a l’apartat de partides disponibles. Podem observar que és buit.
+
+Sortida: Mirant que les partides disponibles del segon usuari són nules aleshores podem verificar que els usuaris no comparteixen partides a mitges.
+
+Resultat de la prova: OK.

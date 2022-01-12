@@ -1,0 +1,5 @@
+Board.jar-->Driver amb els jocs de prova de la classe Board.
+
+boards--> subdirectori que conté taulers en format .txt
+
+tests.txt --> Breu descripció dels jocs de prova amb els seus inputs i outputs.

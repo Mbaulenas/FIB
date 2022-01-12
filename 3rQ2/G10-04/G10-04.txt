@@ -1,0 +1,11 @@
+GRUP: 10
+SUBGRUP: 04
+LLIURAMENT: 3er
+VERSIÓ: 3.0
+DATA DE LLIURAMENT: 22/12/2020
+INTEGRANTS:
+	Laura Álvarez Berrocal - laura.alvarez.berrocal@estudiantat.upc.edu
+	Gabriel Chasipanta Gaviño - gabriel.chasipanta@estudiantat.upc.edu
+	Manuel Domènech López - manuel.domenech.lopez@estudiantat.upc.edu
+	Sergi Vilches Llobet - sergi.vilches@estudiantat.upc.edu
+	
