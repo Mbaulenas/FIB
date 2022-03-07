@@ -1,0 +1,90 @@
+video del rene:
+
+PARTICIONAR EL DISC
+
+sudo su
+
+fdisk -l -- llista els discs
+
+si no estem en una VM hauriem de fer umonut/dev/usb* per desmuntar-ho tot.
+trobem a quin usb esta el disc
+
+fdisk /dev/sda per entrar al disc
+
+"p" mostra la taula actual de particions, util x si ens ho donen a mig muntar.
+
+Primer sector: primari, 8-10GB.
+
+Com estic a la VM fare una extesa que ocupi la resta del disc pero hauria de fer una primaria mes pel swap
+
+
+dins de la extesa fare 3 particions, home(500M), usr/local(1G) i swap(2G el doble de la ram)
+
+canviar tipus de la particio de swap a la 82
+
+w per escriure els canvis
+
+
+CREAR SISTEMA DE FITXERS
+
+mkfs -t ext4 /dev/sda(1-7)
+
+
+
+mkdir /linux
+
+mount /dev/sda1 /linux
+
+mkdir /linux/(sys,proc,dev,home,usr/local)
+
+un cop creats els directoris muntem les particions del disc a aquests
+
+mount /dev/sda5 /linux/home
+mount /dev/sda6 /linux/usr/local
+mount -o bind /sys /linux/sys
+mount -o bind /proc /linux/proc
+mount -o bind /dev /linux/dev
+
+
+sftp aso tal i cual ens descarreguem la imatge i la descomprimim a /linux
+
+chroot /linux
+
+vi /etc/fstab
+
+	/dev/sda1	/		ext4	defaults	0	1
+	/dev/sda5	/home		ext4	defaults	0	2
+	/dev/sda6	/usr/local	ext4	defaults	0	2
+	/dev/sda7	none		swap	defaults	0	0
+
+grub-install /dev/sda
+update-grub
+
+creem usuaris
+
+rebotejem
+
+nano /etc/network/interfaces
+
+	auto enp0s3
+	iface enp0s3 inet dhcp
+
+ifup enp0s3
+
+----------------------------------------------------------------------------------
+La idea general una mica es particionar el disc, crear el sistema de fitxers i llavors crear un directori qualsevol q es diu /linux.
+
+A /linux muntarem el disc, i als subdirectoris cada una de les particions, mes sys proc dev.
+
+un cop estigui tot muntat podem anar a dins i descarregar la imatge si no la te. Descarreguem descomprimim i ja tindrem els fitxers del linux.
+
+Toquem el fstabs per deixarho tot arreglat i podem rebootejar.
+
+Llavors fem chroot per canviar la / del sistema i usar el q acabem de crear.
+
+un cop tenim aixo podem configurar el teclat, pero la teca esta en fer el grub-install per que pugui bootejar el sistema. "grub-install /dev/sdb" i despres "update-grub
+
+canviem la contrasenya d algun usuari i d root per poder entrar, chapem chroot shell i fem shutdown -r
+
+
+
